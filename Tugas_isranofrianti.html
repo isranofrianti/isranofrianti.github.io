@@ -3,75 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Saya</title>
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
             background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
         }
-
+        .cv-container {
+            width: 60%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
         header {
             text-align: center;
-            background-color: #333;
-            color: white;
-            padding: 20px;
+            margin-bottom: 20px;
         }
-
+        header h1 {
+            font-size: 32px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #007BFF, #00C6FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007BFF;
+        }
         section {
-            background: white;
-            margin: 20px auto;
-            padding: 20px;
-            width: 60%;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
-
         h2 {
-            color: #333;
+            background: #007BFF;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 18px; /* Ukuran lebih kecil dari sebelumnya */
         }
-
-        #kontak {
-            cursor: pointer;
-            color: blue;
-            text-decoration: underline;
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            background: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Nama Anda</h1>
-        <p>Posisi / Profesi</p>
-    </header>
-    <section id="profil">
-        <h2>Profil</h2>
-        <p>Deskripsi singkat tentang diri Anda.</p>
-    </section>
-    <section id="pengalaman">
-        <h2>Pengalaman Kerja</h2>
-        <ul>
-            <li>Posisi - Perusahaan (Tahun)</li>
-            <li>Posisi - Perusahaan (Tahun)</li>
-        </ul>
-    </section>
-    <section id="pendidikan">
-        <h2>Pendidikan</h2>
-        <ul>
-            <li>Universitas - Jurusan (Tahun)</li>
-        </ul>
-    </section>
-    <section id="kontak">
-        <h2>Kontak</h2>
-        <p>Email: emailanda@example.com</p>
-        <p>Telepon: 08123456789</p>
-    </section>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.getElementById("kontak").addEventListener("click", function() {
-                alert("Hubungi saya melalui email: emailanda@example.com");
-            });
-        });
-    </script>
+    <div class="cv-container">
+        <header>
+            <h1>CURRICULUM VITAE</h1>
+            <img src="isra.jpg" alt="Foto Profil" class="profile-pic">
+        </header>
+        <section id="identitas">
+            <p><strong>Nama:</strong> Isranofrianti</p>
+            <p><strong>Tempat, Tgl Lahir:</strong> Tampo, 29 november 2004</p>
+            <p><strong>Jenis Kelamin:</strong> Perempuan</p>
+            <p><strong>Agama:</strong> Islam</p>
+            <p><strong>Kewarganegaraan:</strong> Indonesia</p>
+            <p><strong>Status:</strong> Belum Menikah</p>
+            <p><strong>Alamat Sekarang:</strong> JL. Abdulrahmantarimana, kelurahan kambu</p>
+            <p><strong>Telephone:</strong> 082259266549</p>
+            <p><strong>Email:</strong> <a href="mailto:isranofrianti29@gmail.com">isranofrianti29@gmail.com</a></p>
+        </section>
+        <section id="pendidikan">
+            <h2>PENDIDIKAN FORMAL</h2>
+            <ul>
+                <li>2014 - 2019 : <strong>SDN 1 Napabalano</strong></li>
+                <li>2019 - 2021 : <strong>SMPN 1 Napabalano</strong></li>
+                <li>2021 - 2023 : <strong>SMAN 1 Napabalano</strong></li>
+                <li>2023 : <strong>UNIVERSITAS HALUOLEO</strong></li>
+            </ul>
+        </section>
+        <section id="kemampuan">
+            <h2>KEMAMPUAN</h2>
+            <ul>
+                <li>MAMPU BEKERJA DENGAN BAIK</li>
+            </ul>
+        </section>
+        <section id="pengalaman">
+            <h2>PENGALAMAN</h2>
+            <ul>
+                <li>-</li>
+            </ul>
+        </section>
+    </div>
 </body>
 </html>
