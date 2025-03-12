@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 60%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #kontak {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nama Anda</h1>
+        <p>Posisi / Profesi</p>
+    </header>
+    <section id="profil">
+        <h2>Profil</h2>
+        <p>Deskripsi singkat tentang diri Anda.</p>
+    </section>
+    <section id="pengalaman">
+        <h2>Pengalaman Kerja</h2>
+        <ul>
+            <li>Posisi - Perusahaan (Tahun)</li>
+            <li>Posisi - Perusahaan (Tahun)</li>
+        </ul>
+    </section>
+    <section id="pendidikan">
+        <h2>Pendidikan</h2>
+        <ul>
+            <li>Universitas - Jurusan (Tahun)</li>
+        </ul>
+    </section>
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <p>Email: emailanda@example.com</p>
+        <p>Telepon: 08123456789</p>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("kontak").addEventListener("click", function() {
+                alert("Hubungi saya melalui email: emailanda@example.com");
+            });
+        });
+    </script>
+</body>
+</html>
